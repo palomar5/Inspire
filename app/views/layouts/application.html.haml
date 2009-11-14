@@ -1,0 +1,27 @@
+!!!
+%html{ 'lang' => 'de' }
+  %head
+    %meta{ 'http-equiv' => 'Content-type', 'content' => 'text/html;charset=utf-8' }
+    %title= t('header.title')
+    = stylesheet_link_merged 'screen', :media => 'screen, projection'
+    = yield(:head)
+    /[if IE]
+      :javascript
+        var ce=document.createElement;ce('header');ce('nav');ce('article');ce('section');ce('footer');ce('aside');ce('time')
+  %body
+    #page
+      %header
+        = link_to(image_tag('logo', :alt => t('header.tagline')), root_path, :id => 'logo')
+        %nav
+          %ul
+            %li
+              = link_to t('header.navigation.home'), root_path
+      - if flash[:notice]
+        #flash= flash[:notice]
+      %section
+        = yield
+      %footer © Nico Hagenburger 2009
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js")
+    = javascript_include_merged 'base'
+    :javascript
+      $(function(){#{yield(:jquery)}})

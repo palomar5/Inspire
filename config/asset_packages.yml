@@ -1,0 +1,12 @@
+---
+javascripts:
+- base:
+  #- jquery-1-3-2-min <<< via Google
+  - base
+stylesheets:
+- screen:
+  - reset
+  - screen
+- print:
+  - reset
+  - print
