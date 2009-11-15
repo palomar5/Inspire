@@ -3,24 +3,51 @@ en:
     title: inspire
     tagline: inspire
     navigation:
-      home: Start
+      home: Home
+      users: Users
+      logout: Logout
+      edit_profile: Edit Profile
+      login: Login
+      new_travel: New Travel
+      travels: Travels
   global:
     form_validation_error: Please note the errors listed below.
-  user_sessions:
+  sessions:
     new:
-      email: E-mail addresse
+      h1: Login
+      email_address: E-mail address
       password: Password
       remember_me: Remember me
-      login: Login
-      login_with_twitter: Login with Twitter
+      button: Login
     create:
       notice: "You’re logged in now!"
       activation:
         notice: "You’re activated now!"
       error:
-        notice: "E-mail address and password doesn’t fit."
+        notice: "E-mail address and password does not match."
     destroy: 
       notice: "Bye!"
+  travels:
+    new: 
+      h1: Create new travel
+      button: Create
+    create:
+      notice: Have fun on your trip!
+      error:
+        notice: Something went wrong.
+    index:
+      h1: Your travels
+  home:
+    users:
+      h2: Users
+  users:
+    index:
+      h1: Users
+    edit:
+      h1: Edit profile
+      button: Update
+    update:
+      notice: Successfully updated your profile.
   application: 
     require_no_user:
       notice: "You’re already logged in …"

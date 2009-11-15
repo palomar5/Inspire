@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   filter_parameter_logging :password, :password_confirmation, :old_password
-  rescue_from 'ActiveRecord::RecordInvalid', :with => :form_validation_error
-  rescue_from 'ActiveRecord::StatementInvalid', :with => :form_validation_error
 
   helper :all
   helper_method :current_user_session, :current_user, :logged_in?
@@ -25,7 +23,7 @@ class ApplicationController < ActionController::Base
     unless current_user
       store_location
       flash[:notice] = t('application.require_user.notice')
-      redirect_to new_user_session_url
+      redirect_to login_url
       return false
     end
   end

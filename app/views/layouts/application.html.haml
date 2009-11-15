@@ -11,16 +11,21 @@
   %body
     #page
       %header
-        = link_to(image_tag('logo', :alt => t('header.tagline')), root_path, :id => 'logo')
         %nav
           %ul
-            %li
-              = link_to t('header.navigation.home'), root_path
+            %li= link_to t('header.navigation.home'), root_path
+            %li= link_to t('header.navigation.users'), users_path
+            - if current_user
+              %li= link_to t('header.navigation.edit_profile'), edit_user_path(current_user)
+              %li= link_to t('header.navigation.new_travel'), new_travel_path
+              %li= link_to t('header.navigation.travels'), travels_path
+              %li= link_to t('header.navigation.logout'), logout_path, :method => :delete
+            - else
+              %li= link_to t('header.navigation.login'), login_path
       - if flash[:notice]
-        #flash= flash[:notice]
+        %p.flash= flash[:notice]
       %section
         = yield
-      %footer © Nico Hagenburger 2009
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js")
     = javascript_include_merged 'base'
     :javascript

@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
-  def index
 
+  def index
+    @users = User.find(:all, :limit => 10)
   end
+
 end
