@@ -8,7 +8,7 @@
     /[if IE]
       :javascript
         var ce=document.createElement;ce('header');ce('nav');ce('article');ce('section');ce('footer');ce('aside');ce('time')
-  %body
+  %body{ :class => browser_class }
     #page
       %header
         %nav

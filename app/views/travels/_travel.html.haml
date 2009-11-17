@@ -1,0 +1,6 @@
+.travel
+  %p.links= link_to t('links.destroy'), travel_path(travel), :method => :delete, :class => 'link-destroy'
+  %h2= travel.event
+  %p= travel.location
+  %p= link_to travel.url, travel.url
+  %p.date= l(travel.from, :format => :date_only) + ' – ' + l(travel.to, :format => :date_only)

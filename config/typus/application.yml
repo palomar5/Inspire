@@ -1,0 +1,16 @@
+User:
+  options:
+    nil: '–'
+  fields:
+    list: E-mail, First name, Last name
+    form: E-mail, Gender, Academic title, First name, Last name
+    show: E-mail, Gender, Academic title, First name, Last name
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: 
+  search:
+  application: INSPIRE
+  description:
+

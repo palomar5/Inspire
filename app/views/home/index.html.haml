@@ -1,2 +1,7 @@
-%h2= t('home.users.h2')
-= render :partial => 'users/user', :collection => @users
+%h1= t('home.index.h1')
+.home-column
+  :plain
+    <object width="470" height="285"><param name="movie" value="http://www.youtube.com/v/C1HSQo9ce50&hl=de_DE&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/C1HSQo9ce50&hl=de_DE&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="470" height="285"></embed></object>
+.home-column.last
+  %h2= t('home.index.users.h2')
+  = render :partial => 'users/user', :collection => @users

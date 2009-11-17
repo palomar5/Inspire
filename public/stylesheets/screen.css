@@ -1,0 +1,338 @@
+/* line 1, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+a, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, fieldset, legend, p, pre, span, th, td {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; }
+
+/* line 6, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 10, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+fieldset, img {
+  border: 0; }
+
+/* line 13, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+address, em, th {
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 17, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+li {
+  list-style: none; }
+
+/* line 20, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+th {
+  font-style: normal;
+  text-align: left; }
+
+/* line 24, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%; }
+
+/* line 27, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+/* line 33, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+.msie input, .msie textarea, .msie select {
+  font-size: 100%; }
+
+/* line 36, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_reset.sass */
+header, section, article, aside, footer, time {
+  display: block; }
+
+/* line 4, ../../vendor/plugins/redgreengrid/sass/redgreengrid/typography/_helvetica_13_20.sass */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Swiss 721 Light", "Helvetica", "Arial", "sans-serif";
+  font-weight: 200; }
+
+/* line 8, ../../vendor/plugins/redgreengrid/sass/redgreengrid/typography/_helvetica_13_20.sass */
+h1, h2, h3, h4, h5, h6, strong, th {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", "Swiss 721 Bold", "Helvetica", "Arial", "sans-serif";
+  font-weight: bold; }
+
+/* line 20, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+h1 {
+  font-size: 37px;
+  line-height: 40px;
+  margin: 0 0 20px; }
+
+/* line 20, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+h2, legend {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  position: relative;
+  bottom: 2px; }
+
+/* line 20, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+p, li, dt, dd, td, th, h3, h4, h5, h6, address, p.flash span {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  position: relative;
+  bottom: 1px; }
+
+/* line 17, ../../vendor/plugins/redgreengrid/sass/redgreengrid/typography/_helvetica_13_20.sass */
+.presto h2, .presto legend {
+  position: relative;
+  bottom: 2px; }
+
+/* line 43, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+.box {
+  height: 40px;
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 40px;
+  background: #ccc; }
+
+/* line 48, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+ul.list li {
+  list-style: circle;
+  margin-left: 20px; }
+
+/* line 52, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+ol.list li {
+  list-style: decimal;
+  margin-left: 20px; }
+
+/* line 56, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+hr {
+  border: none;
+  border-bottom: 1px #ccc dotted;
+  margin: 20px 1px 19px 0;
+  position: relative;
+  bottom: 1px; }
+
+/* line 62, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+.gecko hr {
+  margin-bottom: 18px;
+  position: relative;
+  bottom: 2px; }
+
+/* line 67, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_typography.sass */
+p.flash {
+  bottom: 0; }
+
+/* line 2, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+#redgreengrid-columns, #redgreengrid-red, #redgreengrid-green {
+  display: none; }
+
+/* line 5, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+#redgreengrid-columns, #redgreengrid-red, #redgreengrid-green {
+  display: block; }
+
+/* line 8, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+#redgreengrid-columns {
+  bottom: 0;
+  display: none;
+  padding-left: 1000px;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+  /* line 16, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+  #redgreengrid-columns div {
+    background: #F33CE7;
+    float: left;
+    height: 100%;
+    margin-right: 0;
+    opacity: 0.3;
+    width: 0; }
+
+/* line 25, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+#redgreengrid-red {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 0; }
+  /* line 32, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+  #redgreengrid-red div {
+    border-bottom: 1px #F33CE7 solid;
+    margin-top: 19px;
+    opacity: 0.1;
+    width: 1280px; }
+
+/* line 39, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+#redgreengrid-green {
+  bottom: 0;
+  position: absolute;
+  top: -6px;
+  z-index: 999;
+  width: 0; }
+  /* line 46, ../../vendor/plugins/redgreengrid/sass/redgreengrid/_development.sass */
+  #redgreengrid-green div {
+    border-bottom: 1px #50C45E solid;
+    margin-top: 19px;
+    opacity: 0.2;
+    width: 1280px; }
+
+/* line 10, ../../app/stylesheets/partials/_links.sass */
+.links {
+  float: right;
+  z-index: 100; }
+
+/* line 14, ../../app/stylesheets/partials/_links.sass */
+.link-new {
+  background: url(/images/icons/plus-circle.png);
+  float: left;
+  height: 16px;
+  margin-left: 5px;
+  overflow: hidden;
+  text-indent: 20px;
+  width: 16px; }
+
+/* line 17, ../../app/stylesheets/partials/_links.sass */
+.link-destroy {
+  background: url(/images/icons/minus-circle.png);
+  float: left;
+  height: 16px;
+  margin-left: 5px;
+  overflow: hidden;
+  text-indent: 20px;
+  width: 16px; }
+
+/* line 9, ../../app/stylesheets/partials/_layout.sass */
+#page {
+  margin: auto;
+  padding: 0 25px;
+  width: 1000px; }
+
+/* line 14, ../../app/stylesheets/partials/_layout.sass */
+.home-column {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px; }
+  /* line 101, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+  * html .home-column {
+    overflow-x: hidden; }
+
+/* line 17, ../../app/stylesheets/partials/_layout.sass */
+.last {
+  margin-right: 0; }
+
+/* line 1, ../../app/stylesheets/partials/_header.sass */
+nav {
+  background: #ddd;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -khtml-border-bottom-left-radius: 6px;
+  border-radius-bottom-left: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -khtml-border-bottom-right-radius: 6px;
+  border-radius-bottom-right: 6px;
+  overflow: hidden;
+  display: inline-block; }
+  /* line 5, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
+  nav {
+    display: block; }
+  /* line 10, ../../app/stylesheets/partials/_header.sass */
+  nav ul {
+    margin-bottom: 0;
+    padding: 0 15px; }
+  /* line 14, ../../app/stylesheets/partials/_header.sass */
+  nav li {
+    float: left;
+    margin-bottom: 0; }
+  /* line 18, ../../app/stylesheets/partials/_header.sass */
+  nav a {
+    float: left;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none; }
+    /* line 24, ../../app/stylesheets/partials/_header.sass */
+    nav a:hover {
+      background: #ccc; }
+
+/* line 1, ../../app/stylesheets/partials/_flash.sass */
+.flash {
+  background: #C2FB9A;
+  clear: both;
+  color: #246A16;
+  font-weight: bold;
+  padding: 0 10px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px; }
+
+/* line 1, ../../app/stylesheets/partials/_travels.sass */
+.travel {
+  background: #eee;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  width: 290px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px; }
+  /* line 101, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+  * html .travel {
+    overflow-x: hidden; }
+  /* line 9, ../../app/stylesheets/partials/_travels.sass */
+  .travel * {
+    margin-bottom: 0; }
+
+/* line 1, ../../app/stylesheets/partials/_users.sass */
+.user {
+  margin-bottom: 20px; }
+  /* line 4, ../../app/stylesheets/partials/_users.sass */
+  .user * {
+    margin-bottom: 0; }
+
+/* line 2, ../../app/stylesheets/partials/_forms.sass */
+.form li {
+  clear: both; }
+
+/* line 5, ../../app/stylesheets/partials/_forms.sass */
+.form-label {
+  text-align: right;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px; }
+  /* line 101, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+  * html .form-label {
+    overflow-x: hidden; }
+
+/* line 9, ../../app/stylesheets/partials/_forms.sass */
+.form-field {
+  display: block; }
+
+/* line 1, ../../app/stylesheets/partials/_avatars.sass */
+.avatar-small {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px; }
+  /* line 101, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+  * html .avatar-small {
+    overflow-x: hidden; }
+
+/* line 4, ../../app/stylesheets/partials/_avatars.sass */
+.avatar-medium {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px; }
+  /* line 101, ../../vendor/gems/chriseppstein-compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+  * html .avatar-medium {
+    overflow-x: hidden; }
+
+/* line 1, ../../app/stylesheets/partials/_dates.sass */
+.date {
+  background: url(/images/icons/calendar.png) no-repeat 0 50%;
+  padding-left: 20px; }

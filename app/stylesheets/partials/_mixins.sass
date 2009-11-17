@@ -1,0 +1,11 @@
+=border-radius(!size = 6px, !vertical = 'both', !horizontal = 'both')
+  @if !vertical == 'both'
+    :-moz-border-radius     = !size
+    :-webkit-border-radius  = !size
+    :-khtml-border-radius   = !size
+    :border-radius          = !size
+  @else
+    :-moz-border-radius-#{!vertical}#{!horizontal}      = !size
+    :-webkit-border-#{!vertical}-#{!horizontal}-radius  = !size
+    :-khtml-border-#{!vertical}-#{!horizontal}-radius   = !size
+    :border-radius-#{!vertical}-#{!horizontal}          = !size

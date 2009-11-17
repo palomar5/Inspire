@@ -1,0 +1,5 @@
+.avatar-medium
+  = image_tag @user.avatar.url(:medium), :title => @user
+%h1= @user
+- if current_user
+  = render :partial => 'travels/travel', :collection => @user.travels

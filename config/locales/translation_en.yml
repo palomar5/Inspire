@@ -37,9 +37,13 @@ en:
         notice: Something went wrong.
     index:
       h1: Your travels
+    destroy:
+      notice: Removed your travel successfully.
   home:
-    users:
-      h2: Users
+    index:
+      h1: Welcome and be inspired!
+      users:
+        h2: Users
   users:
     index:
       h1: Users

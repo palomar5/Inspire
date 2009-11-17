@@ -1,0 +1,8 @@
+%h1= t('sessions.new.h1')
+- form_for @user_session, :url => create_session_path, :builder => OlliFormBuilder do |f|
+  = f.error_messages
+  %ol.form
+    = f.text_field :email, :value => params[:email], :label => t('sessions.new.email_address')
+    = f.password_field :password, :label => t('sessions.new.password')
+    = f.check_box :remember_me, :label => t('sessions.new.remember_me')
+  = f.submit t('sessions.new.button')

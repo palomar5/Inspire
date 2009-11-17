@@ -1,0 +1,18 @@
+=icon(!name)
+  :background   = "url(/images/icons/#{!name}.png)"
+  :float          left
+  :height         16px
+  :margin-left    5px
+  :overflow       hidden
+  :text-indent    20px
+  :width          16px
+
+.links
+  :float          right
+  :z-index        100
+  
+.link-new
+  +icon("plus-circle")  
+
+.link-destroy
+  +icon("minus-circle")

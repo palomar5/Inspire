@@ -1,0 +1,10 @@
+%h1= t('users.edit.h1')
+- form_for @user, :url => user_path, :builder => OlliFormBuilder, :method => :put, :html => { :multipart => true } do |f|
+  = f.error_messages
+  %ol.form
+    = f.text_field :academic_title
+    = f.text_field :first_name
+    = f.text_field :last_name
+    = f.text_field :email
+    = f.file_field :avatar
+  = f.submit t('users.edit.button')
