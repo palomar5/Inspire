@@ -3,7 +3,7 @@
   %head
     %meta{ 'http-equiv' => 'Content-type', 'content' => 'text/html;charset=utf-8' }
     %title= t('header.title')
-    = stylesheet_link_merged 'screen', :media => 'screen, projection'
+    = stylesheet_tag 'screen', :media => 'screen, projection'
     = yield(:head)
     /[if IE]
       :javascript
