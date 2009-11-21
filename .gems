@@ -2,6 +2,5 @@ chriseppstein-compass                        --source gems.github.com
 haml                   --version '>= 2.2.0'
 authlogic            
 chriseppstein-compass  --version 0.8.17      --source gems.github.com
-rmagick                --version 2.9.1   
 typus                                        --source gemcutter.org
                      
