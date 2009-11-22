@@ -3,4 +3,5 @@ haml                   --version '>= 2.2.0'
 authlogic            
 chriseppstein-compass  --version 0.8.17      --source gems.github.com
 typus                                        --source gemcutter.org
+redgreengrid           --version 0.10.0      --source gemcutter.org
                      

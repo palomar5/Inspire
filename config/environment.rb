@@ -7,13 +7,14 @@ Rails::Initializer.run do |config|
   config.gem 'haml',                  :lib => 'haml',    :version => '>=2.2.0'
   config.gem 'authlogic'
   config.gem 'chriseppstein-compass', :lib => 'compass', :version => '0.8.17',  :source => 'http://gems.github.com/'
-  #config.gem 'rmagick',               :lib => "RMagick", :version => '2.9.1'  
-  config.gem 'rmagick',               :lib => "RMagick", :version => '1.15.17'  # heroku
+  config.gem 'rmagick',               :lib => "RMagick", :version => '1.15.17'  # version compatible with heroku
   config.gem 'typus',                                                           :source => 'http://gemcutter.org'
+  config.gem 'redgreengrid',                             :version => '0.1.0',   :source => 'http://gemcutter.org'
   config.i18n.default_locale = :en
 end
 
-Haml::Template.options[:format] = :html5
+Haml::Template.options[:ugly]         = false
+Haml::Template.options[:format]       = :html5
 Haml::Template.options[:attr_wrapper] = '"'
 
 # FIX: Typus doesn’t work with HAML unless you add this:
